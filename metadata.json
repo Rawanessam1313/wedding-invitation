@@ -1,0 +1,6 @@
+{
+  "name": "Wedding Invitation",
+  "description": "An elegant, interactive Arabic wedding invitation page for Rana & Yousif on August 18, 2026, in Maadi. Features an interactive envelope slide, musical soundtrack selector, and nile-side venue details with live directions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

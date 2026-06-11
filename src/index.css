@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cairo:wght@200..900&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-script: "Alex Brush", cursive;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-amiri: "Amiri", serif;
+  --font-cairo: "Cairo", sans-serif;
+  
+  --color-sage-50: #f4f6f3;
+  --color-sage-100: #e8ede6;
+  --color-sage-200: #d1dcce;
+  --color-sage-300: #afc1ab;
+  --color-sage-400: #8f9e8b;
+  --color-sage-500: #6d7d69;
+  --color-sage-600: #556252;
+  --color-sage-700: #444f41;
+  --color-sage-800: #384236;
+  --color-sage-900: #2f372d;
+  
+  --color-gold-50: #fbf7ec;
+  --color-gold-100: #f5ebce;
+  --color-gold-200: #ebd69c;
+  --color-gold-300: #ddbb61;
+  --color-gold-400: #d1a137;
+  --color-gold-500: #c58622;
+  --color-gold-600: #aa681a;
+  --color-gold-700: #894b17;
+  --color-gold-800: #713c18;
+  --color-gold-900: #603217;
+
+  --color-linen-50: #fcfbfa;
+  --color-linen-100: #f8f6f0;
+  --color-linen-200: #efece0;
+  --color-linen-300: #ded8c3;
+  --color-linen-400: #cabfa1;
+}
+
+@layer utilities {
+  .font-script {
+    font-family: var(--font-script), cursive;
+  }
+  .font-serif {
+    font-family: var(--font-serif), serif;
+  }
+  .font-display {
+    font-family: var(--font-display), serif;
+  }
+  .font-sans {
+    font-family: var(--font-sans), sans-serif;
+  }
+  .font-amiri {
+    font-family: var(--font-amiri), serif;
+  }
+  .font-cairo {
+    font-family: var(--font-cairo), sans-serif;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+body {
+  background-color: #f8f6f0;
+  color: #384236;
+  font-family: var(--font-cairo), sans-serif;
+}
+
