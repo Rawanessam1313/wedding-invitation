@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Heart, MailOpen } from 'lucide-react';
-
+import coverImage from "../assets/images/cover_envelope_1781110322215.png";
 interface EnvelopeCoverProps {
   onOpen: () => void;
   musicPlaying: boolean;
@@ -85,12 +85,12 @@ export default function EnvelopeCover({ onOpen, musicPlaying, setMusicPlaying }:
             className="relative w-full h-full rounded-xl overflow-hidden shadow-xl border border-sage-100 bg-white"
           >
             {/* Sage Green Envelope design view */}
-            <img
-              src="/src/assets/images/cover_envelope_1781110322215.png"
-              alt="دعوة زفاف رنا ويوسف"
-              className="w-full h-full object-cover select-none"
-              referrerPolicy="no-referrer"
-            />
+          <img
+  src={coverImage}
+  alt="دعوة زفاف رنا ويوسف"
+  className="w-full h-full object-cover select-none"
+  referrerPolicy="no-referrer"
+/>
 
             {/* Simulated 3D Flap Overlay for opening animation */}
             {isOpening && (
